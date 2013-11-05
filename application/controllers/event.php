@@ -1,6 +1,6 @@
 <?php
  
-class Asso extends CI_Controller
+class Event extends CI_Controller
 {
     public function __construct()
     {
@@ -17,14 +17,21 @@ class Asso extends CI_Controller
         $this->accueil();
     }
     
-    public function l_asso()
+    public function l_evenement()
     {
-        $this->load->model('membre');
+        // Data get
+        $this->load->model('evenement');
         $data = array();
-        $data['membres'] = $this->membre->liste_membre();
-        $data['nb_membre'] = $this->membre->count();
+        $data['evenements'] = $this->evenement->liste_evenement();
+        $data['nb_evenement'] = $this->evenement->count();
         
+        // Helper get
+        $this->load->helper('date');
+        
+        // View implementation
         $this->load->library('layout');
-        $this->layout->view('asso', $data);
+        $this->layout->view('evenement', $data);
     }
+    
+    
 }

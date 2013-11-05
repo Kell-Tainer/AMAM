@@ -17,8 +17,10 @@
                         <div class="navbar-inner">
                             <div class='container'>
                                 <ul class="nav">
-                                    <?php $laclasse = 'accueil';?><li <?php echo ($classe == $laclasse)?'class="active"':''?> ><a href="<?php echo site_url(array($laclasse, 'mAccueil')); ?>">Accueil</a></li>
-                                    <?php $laclasse = 'asso';?>   <li <?php echo ($classe == $laclasse)?'class="active"':''?> ><a href="<?php echo site_url(array($laclasse, 'l_asso')); ?>">L'association</a></li>
+                                    <?php $laclasse = 'accueil'; ?><li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'mAccueil')); ?>">Accueil</a></li>
+                                    <?php $laclasse = 'asso'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'l_asso')); ?>">L'association</a></li>
+                                    <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'l_evenement')); ?>">Evenements</a></li>
+                                    <?php $laclasse = 'contact'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'contact')); ?>">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -33,6 +35,8 @@
         <?php foreach ($js as $le_js): ?>
             <script type="text/javascript" src="<?php echo $le_js; ?>"></script> 
         <?php endforeach; ?>
+
     </body>
+
 
 </html>

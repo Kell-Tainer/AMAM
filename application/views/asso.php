@@ -1,18 +1,25 @@
 <div id="messages">
     <p>
-        Ceci est la page de présentation du club
+        Ceci est la page de présentation de l'association
     </p>
-    <p>
-        Il y a <?php echo $nb_activites; ?> dans le club actuellement. </br>
-        Les activités :
-        <?php foreach ($activites as $activite): ?>
-            <p>
-                <div id="<?php echo $activite->id; ?>"> <?php echo $activite->libelle; ?></div>
-            </p>
-        <?php endforeach; ?>
 
-    </p>
-    <p>
-        <a href="<?php echo site_url(array('accueil', 'mAccueil')) ?>">accueil</a>
-    </p>
+    <div style="font-weight: bold" >Objectifs :</div>
+    <div>
+        - Réunir les étudiants diplomés de la MIAGE d'IAx-Marseille
+        - Créer un réseau de MIAGISTE
+    </div>
+
+    <div style="font-weight: bold" > Historique :</div>
+    <div>
+        - Créer en 2012
+        - Se développe en 2013
+        - Va mourir en 2350 avec son fondateur (qui aura survécu jusque la le bougre !)
+    </div>
+
+    <div style="font-weight: bold" > Les membres du bureau sont au nombre de : <?php echo $nb_membre;?></div>
+    <ul>
+        <?php foreach ($membres as $membre) : ?>
+                <li style="font-style: italic" id="<?php echo $membre->id; ?>"> <?php echo $membre->nom; ?></li>
+        <?php endforeach;?>
+    </ul>
 </div>

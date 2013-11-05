@@ -1,6 +1,6 @@
 <?php
  
-class Asso extends CI_Controller
+class Contact extends CI_Controller
 {
     public function __construct()
     {
@@ -14,17 +14,18 @@ class Asso extends CI_Controller
     
     public function index()
     {
-        $this->accueil();
+        $this->contact();
     }
     
-    public function l_asso()
+    public function contact()
     {
         $this->load->model('membre');
         $data = array();
         $data['membres'] = $this->membre->liste_membre();
         $data['nb_membre'] = $this->membre->count();
         
+        
         $this->load->library('layout');
-        $this->layout->view('asso', $data);
+        $this->layout->view('contact', $data);
     }
 }

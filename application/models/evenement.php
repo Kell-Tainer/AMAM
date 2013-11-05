@@ -1,18 +1,18 @@
 <?php
  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  
-class Activite extends CI_Model
+class Evenement extends CI_Model
 {
-    protected $table = 'activite';
+    protected $table = 'evenement';
     
     /**
     *  Retourne une liste de activite
     */
-    public function liste_activite()
+    public function liste_evenement()
     {
          return $this->db->select('*')
             ->from($this->table)
-            ->order_by('id', 'libelle')
+            ->order_by('id', 'libelle', 'description', 'date')
             ->get()
             ->result();
     }
@@ -20,7 +20,7 @@ class Activite extends CI_Model
     /**
      *  Ajoute une activite
      */
-    public function ajouter_activite()
+    public function ajouter_evenement()
     {
          
     }
@@ -28,7 +28,7 @@ class Activite extends CI_Model
     /**
      *  Édite une activite déjà existante
      */
-    public function editer_activite()
+    public function editer_evenement()
     {
          
     }
@@ -36,7 +36,7 @@ class Activite extends CI_Model
     /**
      *  Supprime une activite
      */
-    public function supprimer_activite()
+    public function supprimer_evenement()
     {
          
     }

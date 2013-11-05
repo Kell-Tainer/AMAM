@@ -1,4 +1,4 @@
-<div id="messages">
+
     <div class="row-fluid">
         <div class="span8">
             <div id="myCarousel" class="carousel slide">
@@ -24,4 +24,3 @@
             </div>
         </div>
     </div>
-</div>
