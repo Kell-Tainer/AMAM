@@ -12,4 +12,4 @@ RewriteEngine on
 RewriteCond $1 !^(index\.php|assets/|robots\.txt)
 
 #   Toutes les autres URL vont être redirigées vers le fichier index.php.
-RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteRule ^(.*)$ index.php?$1 [L]

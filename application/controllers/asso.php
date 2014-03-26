@@ -20,8 +20,18 @@ class Asso extends CI_Controller
     public function l_asso()
     {
         $this->load->model('membre');
+        $this->load->model('poste');
         $data = array();
-        $data['membres'] = $this->membre->liste_membre();
+        $data['membres'] = $this->membre->liste_membre_less_bureau();
+        
+        foreach ($data['membres'] as $membre){
+            $membre->postes = $this->poste->get_poste_by_membre($membre->id);
+        }
+        $data['bureaux'] = $this->membre->liste_membre_bureau();
+        
+        foreach ($data['bureaux'] as $bureau){
+            $bureau->postes = $this->poste->get_poste_by_membre($bureau->id);
+        }
         $data['nb_membre'] = $this->membre->count();
         
         $this->load->library('layout');

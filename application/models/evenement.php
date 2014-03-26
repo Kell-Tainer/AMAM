@@ -8,11 +8,11 @@ class Evenement extends CI_Model
     /**
     *  Retourne une liste de activite
     */
-    public function liste_evenement()
+    public function get_evenement()
     {
-         return $this->db->select('*')
+         return $this->db->select("id, libelle, description, date")
             ->from($this->table)
-            ->order_by('id', 'libelle', 'description', 'date')
+            ->order_by('date', 'DESC')
             ->get()
             ->result();
     }
@@ -50,6 +50,25 @@ class Evenement extends CI_Model
                 ->count_all_results($this->table);
     }
      
+    public function get_next_evenement(){
+        return $this->db->select('*')
+            ->from($this->table)
+            ->where('date >', date('Y-m-d'))
+            ->order_by('id', 'libelle', 'description', 'date')
+            ->limit(3)
+            ->get()
+            ->result();
+    }
+    
+    public function get_past_evenement(){
+        return $this->db->select('*')
+            ->from($this->table)
+            ->where('date <', date('Y-m-d'))
+            ->order_by('id', 'libelle', 'description', 'date')
+            ->limit(3)
+            ->get()
+            ->result();
+    }
     
 }
 ?>

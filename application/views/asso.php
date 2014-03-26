@@ -1,25 +1,51 @@
-<div id="messages">
-    <p>
-        Ceci est la page de présentation de l'association
-    </p>
+<div class="row-fluid">
+    <div class="span12 img-content"><?php echo img('Asso/groupe-head.png') ?></div>      
+</div> 
+<div class="row-fluid">
+    <div class="span6 pres">Historique :</div>     
+    <div class="span6 pres">Objectifs :</div>     
+</div> 
+<div class="row-fluid" id='asso'>
+    <div class="span12">   
+        <?php
+        $content = array();
+        foreach ($bureaux as $bureau)
+        {
+            $content[$bureau->id] =
+                    "
+                        <div class='media'>
+                            <img class='media-object pull-left photo_ident' src='" . img_url('Photo_ident/' . mb_strtolower($bureau->prenom) . $bureau->id . '.png') . "' alt='' />
+                            <div class='media-body'>
+                                <div class='media-heading' data-src='holder.js/64x64' id='ident_$bureau->id'> $bureau->prenom $bureau->nom</div>";
+                                foreach ($bureau->postes as $poste)
+                                {
+                                    $content[$bureau->id] .= "<div id='poste_$bureau->id'_'$poste->id'> $poste->libelle </div>";
+                                }
+                                $content[$bureau->id] .= "
+                                Promotion : $bureau->promotion </div>
+                        </div>
+                    ";
+        }
+        echo display_inline($content, 3, 'bloc bureau');
 
-    <div style="font-weight: bold" >Objectifs :</div>
-    <div>
-        - Réunir les étudiants diplomés de la MIAGE d'IAx-Marseille
-        - Créer un réseau de MIAGISTE
-    </div>
-
-    <div style="font-weight: bold" > Historique :</div>
-    <div>
-        - Créer en 2012
-        - Se développe en 2013
-        - Va mourir en 2350 avec son fondateur (qui aura survécu jusque la le bougre !)
-    </div>
-
-    <div style="font-weight: bold" > Les membres du bureau sont au nombre de : <?php echo $nb_membre;?></div>
-    <ul>
-        <?php foreach ($membres as $membre) : ?>
-                <li style="font-style: italic" id="<?php echo $membre->id; ?>"> <?php echo $membre->nom; ?></li>
-        <?php endforeach;?>
-    </ul>
+        $content = array();
+        foreach ($membres as $membre)
+        {
+            $content[$membre->id] =
+                    "   <div class='media'>
+                            <img class='media-object pull-left photo_ident' src='" . img_url('Photo_ident/' . mb_strtolower($membre->prenom) . $membre->id . '.png') . "' alt='' />
+                            <div class='media-body'> 
+                                <div class='media-heading' data-src='holder.js/64x64' id='ident_$membre->id'> $membre->prenom $membre->nom</div>";
+                                foreach ($membre->postes as $poste)
+                                {
+                                    $content[$membre->id] .= "<div id='poste_$membre->id'_'$poste->id'> $poste->libelle </div>";
+                                }
+                                $content[$membre->id] .= "
+                                Promotion : $membre->promotion </div>
+                        </div>
+                    ";
+        }
+        echo display_inline($content, 3, 'bloc');
+        ?>
+    </div> 
 </div>

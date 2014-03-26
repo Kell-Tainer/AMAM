@@ -21,7 +21,7 @@
     
     if (!function_exists('img')){
         function img($nom, $alt = ''){
-            return '<img src="' . img_url($nom) . '" alt="' . $alt . '" />';
+            return '<img  src="' . img_url($nom) . '" alt="' . $alt . '" />';
         }
     }
 ?>

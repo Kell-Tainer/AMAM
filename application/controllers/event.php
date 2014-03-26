@@ -22,7 +22,7 @@ class Event extends CI_Controller
         // Data get
         $this->load->model('evenement');
         $data = array();
-        $data['evenements'] = $this->evenement->liste_evenement();
+        $data['evenements'] = $this->evenement->get_evenement();
         $data['nb_evenement'] = $this->evenement->count();
         
         // Helper get

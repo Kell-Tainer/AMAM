@@ -39,6 +39,7 @@ class Layout
         $this->ajouter_css('custom');
         $this->ajouter_js('jquery-2.0.3.min');
         $this->ajouter_js('bootstrap.min');
+        $this->ajouter_js('helpers');
         $this->ajouter_js('custom');
     }   
      

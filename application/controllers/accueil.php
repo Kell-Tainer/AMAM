@@ -26,7 +26,8 @@ class Accueil extends CI_Controller
         $data['pseudo'] = !empty($pseudo)?$pseudo:'pas de pseudo';
         $data['email'] = 'email@ndd.fr';
         $data['en_ligne'] = true;
-        
+        $data['next_evenement'] = $this->get_next_evenement();
+
         $this->layout->view('accueil', $data);
     }
  
@@ -47,5 +48,11 @@ class Accueil extends CI_Controller
         }
     }
     
+    private function get_next_evenement(){
+        $this->load->model('evenement');
+        
+        return $this->evenement->get_next_evenement();
+        
+    }
 }
 ?>
