@@ -48,6 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
+//$db['default']['hostname'] = 'mysql51-116.perso';
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'anciensmjamam';
 $db['default']['password'] = 'j7kz7A2qP6vP';
@@ -55,6 +56,7 @@ $db['default']['database'] = 'anciensmjamam';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
+//$db['default']['db_debug'] = FALSE;
 $db['default']['db_debug'] = TRUE;
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';

@@ -15,6 +15,7 @@
 |
 */
 $config['base_url']	= 'http://localhost/AMAM/';
+//$config['base_url']	= 'http://www.anciens-miagistes.fr';
 
 /*
 |--------------------------------------------------------------------------
