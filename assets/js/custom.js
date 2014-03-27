@@ -100,7 +100,6 @@ $(document).on('click', '.bloc', function() {
     var height = $(this).css('height');
     var span = $(this).getClass('span');
     var size = $(this).attr('data-size');
-    console.log(size);
     if ($(this).attr('data-open') != 'true') {
         // On met tous les éléments de la ligne dans le même état
         if (size < 6) {
