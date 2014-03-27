@@ -68,7 +68,7 @@ header{
 
 
 .bloc, .bloc-title{
-    background-color: #D8D8D8;
+    background-color: rgba(125, 207, 249, 0.4); /*#7DCFF9*/
     list-style: none;
     text-align: right;
     margin-bottom: 10px;
@@ -84,13 +84,13 @@ header{
 }
 
 .bureau{
-    background-color: #BFBFBF;
+    background-color: rgba(39, 160, 248, 0.5); /*#27A0F8*/
 }
 
 .pres{
     padding: 10px 15px 10px 15px;
     margin-bottom: 10px;
-    background-color: #CEEDFD;
+    background-color: rgba(125, 207, 249, 0.4); /*#7DCFF9*/
 }
 
 #asso{
