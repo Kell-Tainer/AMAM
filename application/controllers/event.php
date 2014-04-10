@@ -12,10 +12,10 @@ class Event extends CI_Controller
         
     }
     
-    public function index()
-    {
-        $this->accueil();
-    }
+//    public function index()
+//    {
+//        $this->l_evenement();
+//    }
     
     public function l_evenement()
     {

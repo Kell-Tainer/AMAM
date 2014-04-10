@@ -14,7 +14,7 @@ class Asso extends CI_Controller
     
     public function index()
     {
-        $this->accueil();
+        $this->l_asso();
     }
     
     public function l_asso()

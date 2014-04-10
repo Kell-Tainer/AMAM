@@ -38,8 +38,12 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "accueil";
 $route['404_override'] = '';
+$route['accueil'] = 'accueil/mAccueil';
+$route['asso.'] = 'asso/l_asso';
+$route['event'] = 'event/l_evenement';
+$route['emploi'] = 'emploi/emploi';
 
 
 /* End of file routes.php */

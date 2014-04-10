@@ -17,19 +17,17 @@
                     <div class="navbar">
                         <div class="navbar-inner">
                             <div class='container'>
-
                                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </a>
-                                
                                 <div class="nav-collapse collapse">
                                     <ul class="nav">
-                                        <?php $laclasse = 'accueil'; ?><li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'mAccueil')); ?>">Accueil</a></li>
-                                        <?php $laclasse = 'asso'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'l_asso')); ?>">L'association</a></li>
-                                        <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'l_evenement')); ?>">Evenements</a></li>
-                                        <?php $laclasse = 'emploi'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse, 'emploi')); ?>">Offres d'emploi</a></li>
+                                        <?php $laclasse = 'accueil'; ?><li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Accueil</a></li>
+                                        <?php $laclasse = 'asso'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">L'association</a></li>
+                                        <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Evenements</a></li>
+                                        <?php $laclasse = 'emploi'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Offres d'emploi</a></li>
                                     </ul>
                                 </div>
                             </div>
