@@ -11,8 +11,13 @@
         <div class='container' id="main-content">
             <div class ='contenu'>
                 <div id="masthead">
-                    <header>
-                        <div class="muted">  <?php echo img('amam_v1_trns.png') ?> </div>
+                    <header id="header">
+                        <div id="social-media-icons">
+                            <a class="social-media-icon facebook" target="_blank" href="https://www.facebook.com/asso.amam">Facebook</a>
+<!--                            <a class="social-media-icon twitter" target="_blank" href="">Twitter</a>
+                            <a class="social-media-icon G-Plus" target="_blank" href="">G-Plus</a>
+                            <a class="social-media-icon youtube" target="_blank" href="">Youtube</a>-->
+                        </div>
                     </header>
                     <div class="navbar">
                         <div class="navbar-inner">

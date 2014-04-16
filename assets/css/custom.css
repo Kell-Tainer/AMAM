@@ -29,6 +29,10 @@ body {
 
 header{
     text-align: center;
+    background-image: url('../images/amam_v1_trns.png');
+    background-position: center;
+    height: 110px;
+    background-repeat: no-repeat;
 }
 
 .img-content{
@@ -38,6 +42,43 @@ header{
 .photo_ident{
     height: 132px;
     width: 100px;
+}
+
+#social-media-icons {
+    margin: 36px 50px 0 0;
+    text-align: center;
+    float: right;   
+}
+
+a.social-media-icon {
+    background-position: 0 0;
+    display: inline-block;
+    height: 32px;
+    margin-right: 6px;
+    overflow: hidden;
+    text-indent: -1000px;
+    transition: background-position 0.25s ease 0s;
+    width: 32px;
+}
+
+a.social-media-icon:hover {
+    background-position: 0 -32px;
+}
+
+.facebook {
+    background-image: url("../images/facebook.png");
+}
+
+.twitter{
+    background-image: url("../images/twitter.png");
+}
+
+.G-Plus{
+    background-image: url("../images/g-plus.png");
+}
+
+.youtube{
+    background-image: url("../images/youtube.png");
 }
 /* ----------------------- global end --------------------*/
 
