@@ -1,4 +1,4 @@
-<div class="row-fluid">
+<div class="row-fluid" id='zone'>
     <div class="span12">
         <?php
         $content = array();

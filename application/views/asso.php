@@ -5,7 +5,7 @@
     <div class="span6 pres">Historique :</div>     
     <div class="span6 pres">Objectifs :</div>     
 </div> 
-<div class="row-fluid" id='asso'>
+<div class="row-fluid" id='zone'>
     <div class="span12">   
         <?php
         $content = array();
