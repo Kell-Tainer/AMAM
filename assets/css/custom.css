@@ -109,7 +109,7 @@ a.social-media-icon:hover {
 /* ----------------------- pied de page end --------------------*/
 
 
-.bloc, .bloc-title{
+.bloc, .bloc-title-event{
     background-color: rgba(125, 207, 249, 0.4); /*#7DCFF9*/
     list-style: none;
     text-align: right;
@@ -121,8 +121,14 @@ a.social-media-icon:hover {
     height: 150px;
 }
 
-.bloc-title{
+.bloc-title-event{
     padding: 40px;
+}
+
+.bloc-title{
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 10px;
+    background-color: rgba(39, 160, 248, 0.5); /*#27A0F8*/
 }
 
 .bureau{
@@ -133,6 +139,25 @@ a.social-media-icon:hover {
     padding: 10px 15px 10px 15px;
     margin-bottom: 10px;
     background-color: rgba(125, 207, 249, 0.4); /*#7DCFF9*/
+    height: 300px;
+}
+
+.title-pres{
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-pres2{
+    text-align: left;
+    text-decoration: underline;
+}
+
+.text-pres{
+    text-align: center;
+}
+
+.text-pres2{
+    text-align: justify;
 }
 
 #zone{

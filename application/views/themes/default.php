@@ -32,7 +32,8 @@
                                         <?php $laclasse = 'accueil'; ?><li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Accueil</a></li>
                                         <?php $laclasse = 'asso'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">L'association</a></li>
                                         <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Evenements</a></li>
-                                        <?php $laclasse = 'emploi'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Offres d'emploi</a></li>
+                                        <?php $laclasse = 'emploi'; ?>   
+                                        <!--<li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Offres d'emploi</a></li>-->
                                     </ul>
                                 </div>
                             </div>

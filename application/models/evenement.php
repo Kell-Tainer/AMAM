@@ -65,7 +65,7 @@ class Evenement extends CI_Model
             ->from($this->table)
             ->where('date <', date('Y-m-d'))
             ->order_by('id', 'libelle', 'description', 'date')
-            ->limit(3)
+            ->limit(6)
             ->get()
             ->result();
     }

@@ -24,7 +24,8 @@ class Event extends CI_Controller
         $data = array();
         $data['evenements'] = $this->evenement->get_evenement();
         $data['nb_evenement'] = $this->evenement->count();
-        
+        $data['evenements_past'] = $this->evenement->get_past_evenement();
+        $data['evenements_next'] = $this->evenement->get_next_evenement();
         // Helper get
         $this->load->helper('date');
         

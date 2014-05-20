@@ -1,9 +1,30 @@
-<div class="row-fluid">
+<!--<div class="row-fluid">
     <div class="span12 img-content"><?php echo img('Asso/groupe-head.png') ?></div>      
-</div> 
+</div> -->
 <div class="row-fluid">
-    <div class="span6 pres">Historique :</div>     
-    <div class="span6 pres">Objectifs :</div>     
+    <div class="span6 pres">
+        <div class="title-pres">Historique</div>
+        <div class="title-pres2">Date de création</div>
+        <div class="text-pres">1er mai 2012</div>
+        <div class="title-pres2">Date du 1er événement</div>
+        <div class="text-pres">8 juin 2012</div>
+        <div class="title-pres2">Événements organisés</div>
+        <div class="text-pres">14</div>
+        <div class="title-pres2">Promotions regroupées</div>
+        <div class="text-pres">22</div>
+        <div class="title-pres2">Membres du bureau</div>
+        <div class="text-pres">13</div>
+    </div>     
+    
+    <div class="span6 pres">
+        <div class="title-pres">Objectifs</div>
+        <div class="title-pres2">Maintenir les liens existants…</div>
+        <div class="text-pres2">Un diplôme, un emploi, le tout souvent accompagné d’une vie de famille… chacun ayant son emploi du temps, il n’est pas toujours simple de se retrouver après la MIAGE. Nous sommes là pour vous y aider.</div>
+        <div class="title-pres2">… et en créer…</div>
+        <div class="text-pres2">Vous recherchez un emploi ? Un contact perdu ? De nouveaux contacts parmi les étudiants ou les fraîchement diplômés ? Forte de son répertoire et de son réseau de connaissances, l’AMAM peut sûrement vous guider.</div>
+        <div class="title-pres2">… pour renforcer votre réseau.</div>
+        <div class="text-pres2">Dans le monde de l’ingénierie et de l’informatique, un constat se veut de plus en plus important : les Miagistes sont partout. Nous devons faire de ce constat une force ; en maintenant plus de contacts entre nous , nous augmentons les chances pour chacun d’évoluer vers un avenir professionnel optimal.</div>
+    </div>
 </div> 
 <div class="row-fluid" id='zone'>
     <div class="span12">   
