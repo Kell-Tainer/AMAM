@@ -5,11 +5,11 @@
     <div class="span6 pres">
         <div class="title-pres">Historique</div>
         <div class="title-pres2">Date de création</div>
-        <div class="text-pres">1er mai 2012</div>
+        <div class="text-pres">5 octobre 2012</div>
         <div class="title-pres2">Date du 1er événement</div>
         <div class="text-pres">8 juin 2012</div>
         <div class="title-pres2">Événements organisés</div>
-        <div class="text-pres">14</div>
+        <div class="text-pres">13</div>
         <div class="title-pres2">Promotions regroupées</div>
         <div class="text-pres">22</div>
         <div class="title-pres2">Membres du bureau</div>

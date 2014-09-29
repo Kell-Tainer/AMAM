@@ -18,7 +18,7 @@
     </div>
     <div class="span4">
         <?php foreach ($next_evenement as $event): ?>
-            <div class="bloc-title-event"><?php echo $event->libelle; ?></div>
+            <div class="bloc-title-event"><a href="<?php echo site_url("event"); ?>" title="<?php echo $event->libelle; ?>"><?php echo $event->libelle; ?></a></div>
         <?php endforeach; ?>
     </div>
 </div>

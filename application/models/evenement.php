@@ -54,7 +54,7 @@ class Evenement extends CI_Model
         return $this->db->select('*')
             ->from($this->table)
             ->where('date >', date('Y-m-d'))
-            ->order_by('id', 'libelle', 'description', 'date')
+            ->order_by('date','asc')
             ->limit(3)
             ->get()
             ->result();
@@ -64,7 +64,7 @@ class Evenement extends CI_Model
         return $this->db->select('*')
             ->from($this->table)
             ->where('date <', date('Y-m-d'))
-            ->order_by('id', 'libelle', 'description', 'date')
+            ->order_by('date', 'desc')
             ->limit(6)
             ->get()
             ->result();
