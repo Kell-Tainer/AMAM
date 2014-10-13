@@ -31,7 +31,7 @@
                                     <ul class="nav">
                                         <?php $laclasse = 'accueil'; ?><li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Accueil</a></li>
                                         <?php $laclasse = 'asso'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">L'association</a></li>
-                                        <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Evenements</a></li>
+                                        <?php $laclasse = 'event'; ?>   <li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Evénements</a></li>
                                         <?php $laclasse = 'emploi'; ?>   
                                         <!--<li <?php echo ($classe == $laclasse) ? 'class="active"' : '' ?> ><a href="<?php echo site_url(array($laclasse)); ?>">Offres d'emploi</a></li>-->
                                     </ul>
@@ -52,7 +52,7 @@
                     <div class="span4 offset4">
                         <ul class="footer-link">
                             <li><a href="<?php echo site_url(array('contact', 'contact')) ?>">Contact</a> <span class="divider"></span> </li>
-                            <li><a href="<?php echo site_url(array('contact', 'contact')) ?>">Metions légales</a></li>
+                            <li><a href="<?php echo site_url(array('contact', 'contact')) ?>">Mentions légales</a></li>
                         </ul>
                     </div>
                 </div>
